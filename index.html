@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¡Feliz Cumpleaños Chikio Peña!</title>
+  <style>
+    /* Animación para el fondo que se desplaza en gradiente */
+    @keyframes moverFondo {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    /* Animación tipo "salto" para el título */
+    @keyframes salto {
+      0% {
+        transform: translateY(0);
+      }
+      20% {
+        transform: translateY(-25px);
+      }
+      40% {
+        transform: translateY(15px);
+      }
+      60% {
+        transform: translateY(-10px);
+      }
+      80% {
+        transform: translateY(5px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    /* Animación de parpadeo/flicker para el texto estilo graffiti */
+    @keyframes parpadeo {
+      0%   { opacity: 1; }
+      10%  { opacity: 0.9; }
+      20%  { opacity: 0.8; }
+      30%  { opacity: 1; }
+      40%  { opacity: 0.6; }
+      50%  { opacity: 1; }
+      60%  { opacity: 0.8; }
+      70%  { opacity: 1; }
+      80%  { opacity: 0.7; }
+      90%  { opacity: 1; }
+      100% { opacity: 1; }
+    }
+
+    /* Estilos generales */
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      color: #fff;
+
+      /* Fondo animado en gradiente */
+      background: linear-gradient(-45deg, #111, #222, #333, #444);
+      background-size: 400% 400%;
+      animation: moverFondo 15s ease infinite;
+    }
+
+    h1 {
+      font-size: 60px;
+      margin: 20px 0;
+      color: #e74c3c;
+      text-shadow: 3px 3px 0 #000;
+
+      /* Aplica la animación de salto al cargar */
+      animation: salto 2s ease;
+    }
+
+    /* Imagen con borde y una leve rotación al pasar el mouse */
+    img {
+      max-width: 300px;
+      border: 5px solid #e74c3c;
+      border-radius: 10px;
+      margin: 20px 0;
+      transition: transform 0.3s ease;
+    }
+    img:hover {
+      transform: scale(1.1) rotate(5deg);
+    }
+
+    .adornos {
+      margin: 20px auto;
+      max-width: 800px;
+      font-size: 24px;
+      color: #f1c40f;
+      text-shadow: 2px 2px 3px #000;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border: 2px dashed #e74c3c;
+    }
+
+    /* Texto estilo graffiti con parpadeo */
+    .graffiti {
+      font-size: 30px;
+      color: #27ae60;
+      text-shadow: 2px 2px 5px #000;
+      margin-top: 10px;
+
+      animation: parpadeo 3s infinite;
+    }
+
+    /* Añadimos un footer con un mensaje adicional */
+    footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #ccc;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <h1>¡Feliz Cumpleaños Chikio Peña!</h1>
+  <!-- Reemplaza la ruta de la imagen ("peña.png") por la foto real de tu amigo si lo deseas -->
+  <img src="peña.png" alt="Foto de Chikio Peña">
+  <div class="adornos">
+    <p class="graffiti">El verdadero delincuente del barrio, ¡que tu día sea tan legendario como tus hazañas!</p>
+  </div>
+
+  <footer>
+    Diseño divertido para un gran día. ¡Disfrútalo!  
+    <br>  
+    <span style="font-size: 12px; color: #888;">Hecho por <strong>Ronald Villacorta</strong></span>
+  </footer>
+
+</body>
+</html>
